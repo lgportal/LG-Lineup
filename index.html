@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Dòng Tủ Lạnh LG 2026 - Danh Mục Sản Phẩm & Trải Nghiệm Tương Tác</title>
+  <meta name="description" content="Tra cứu toàn bộ danh mục dòng tủ lạnh LG 2026: French Door, Side-by-Side, Ngăn đá dưới, Ngăn đá trên, Tủ đông. Chạm vào sản phẩm để xem trực tiếp trang chi tiết và quay lại trang chính nhanh chóng.">
+  <meta name="keywords" content="tủ lạnh LG, LG french door, LG side by side, tủ lạnh ngăn đá dưới, tủ lạnh ngăn đá trên, tủ đông LG, LG 2026">
+  <meta name="theme-color" content="#C4003E">
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css?v=7">
+</head>
+<body>
+  <!-- Ambient Glow Background -->
+  <div class="bg-glow" aria-hidden="true"></div>
+
+  <!-- Main Header -->
+  <header class="site-header" id="siteHeader">
+    <div class="header-container">
+      <!-- Brand Logo & Title -->
+      <div class="brand-section">
+        <a href="#" class="brand-logo" id="brandLogo" title="LG Refrigerator Catalog">
+          <span class="brand-badge">LG</span>
+          <div class="brand-text">
+            <span class="brand-title">DÒNG TỦ LẠNH LG</span>
+            <span class="brand-subtitle">CATALOGUE LINEUP 2026</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Live Search Box -->
+      <div class="search-box">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="text" 
+               id="searchInput" 
+               class="search-input" 
+               placeholder="Tìm kiếm mã model, loại tủ... (Nhấn /)" 
+               autocomplete="off" 
+               aria-label="Tìm kiếm sản phẩm">
+        <button id="searchClear" class="search-clear" title="Xóa tìm kiếm" aria-label="Xóa tìm kiếm">✕</button>
+      </div>
+
+      <!-- Action Controls: View Modes -->
+      <div class="header-actions">
+        <!-- View Mode Switcher -->
+        <div class="view-toggle-group" role="group" aria-label="Chế độ hiển thị">
+          <button id="btnViewPresentation" class="btn-toggle active" title="Xem theo giao diện chuẩn Presentation">
+            <span>📑</span>
+            <span>Chuẩn Slide</span>
+          </button>
+          <button id="btnViewGrid" class="btn-toggle" title="Xem theo dạng lưới sản phẩm hiện đại">
+            <span>🔲</span>
+            <span>Dạng Lưới</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Filter Bar: Category & Badge Pills -->
+  <nav class="filter-bar" id="filterBar" aria-label="Danh mục sản phẩm">
+    <div class="filter-container">
+      <div class="category-pills" id="categoryPills">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="catalog-stats">
+        <span>Hiển thị: <strong id="visibleCount">51</strong> / <span id="totalCount">51</span> model</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-banner" id="heroBanner">
+    <h1 class="hero-title">
+      <span>DÒNG TỦ LẠNH</span>
+    </h1>
+    <p class="hero-subtitle">
+      Khám phá bộ sưu tập công nghệ làm lạnh tiên tiến hàng đầu từ LG.
+    </p>
+    <div class="hero-tip">
+      <span aria-hidden="true">👉</span>
+      <span>Chạm vào bất kỳ sản phẩm nào để xem <strong>trang chính thức của LG</strong>. Luôn có nút <strong>[⬅ QUAY LẠI TRANG CHÍNH]</strong> ở góc trên cùng để trở về bất kỳ lúc nào!</span>
+    </div>
+  </section>
+
+  <!-- Main Content Area -->
+  <main class="main-wrapper" id="mainContent">
+    <!-- MODE 1: Presentation 2-Column Layout (Matching exact PDF/PPTX layout) -->
+    <section class="presentation-layout" id="presentationContainer" aria-label="Danh mục tủ lạnh dạng chuẩn">
+      <!-- Populated via js/app.js -->
+    </section>
+
+    <!-- MODE 2: Modern Responsive Grid Layout -->
+    <section class="grid-layout" id="gridContainer" style="display: none;" aria-label="Danh mục tủ lạnh dạng lưới">
+      <!-- Populated via js/app.js -->
+    </section>
+
+    <!-- No Search Results Found -->
+    <div class="no-results" id="noResults">
+      <div class="no-results-icon">🔎</div>
+      <h3 class="no-results-title">Không tìm thấy sản phẩm phù hợp</h3>
+      <p class="no-results-text">Vui lòng thử tìm kiếm với mã sản phẩm khác hoặc chọn bộ lọc "Tất cả".</p>
+    </div>
+  </main>
+
+  <!-- Fullscreen Interactive Product Viewer Modal -->
+  <div class="product-viewer-modal" id="productViewerModal" role="dialog" aria-modal="true" aria-label="Chi tiết sản phẩm">
+    <!-- Top Sticky Control Header -->
+    <div class="viewer-top-bar" id="viewerTopBar">
+      <div style="display: flex; align-items: center; gap: 16px;">
+        <!-- The Prominent "QUAY LẠI TRANG CHÍNH" Button -->
+        <button class="btn-back-main" id="btnBackMain" title="Quay lại trang chính (Esc)">
+          <span class="btn-back-icon" aria-hidden="true">⬅</span>
+          <span>QUAY LẠI TRANG CHÍNH</span>
+        </button>
+
+        <!-- Product Badge & Name Info -->
+        <div class="viewer-product-meta">
+          <span class="viewer-model-badge" id="viewerModelBadge">MODEL</span>
+          <span class="viewer-category-tag" id="viewerCategoryTag">Tủ lạnh LG</span>
+        </div>
+      </div>
+
+      <!-- Action Controls -->
+      <div class="viewer-actions">
+        <a id="btnViewerOpenExternal" href="#" target="_blank" rel="noopener noreferrer" class="btn-viewer-action" title="Mở trong tab mới riêng biệt">
+          <span>↗</span>
+          <span>Mở Tab mới</span>
+        </a>
+        <button id="btnViewerRefresh" class="btn-viewer-action" title="Tải lại trang">
+          <span>🔄</span>
+          <span>Tải lại</span>
+        </button>
+        <button id="btnViewerClose" class="btn-viewer-close" title="Đóng và quay lại trang chính (Esc)" aria-label="Đóng">✕</button>
+      </div>
+    </div>
+
+    <!-- Sub-Bar Notice Guide -->
+    <div class="viewer-notice-bar" id="viewerNoticeBar">
+      <div class="viewer-notice-text">
+        <span aria-hidden="true">🌐</span>
+        <span>Đang xem trang chính thức của LG: <a id="viewerNoticeUrl" href="#" target="_blank" rel="noopener noreferrer" class="viewer-notice-url">https://www.lg.com/vn/...</a></span>
+      </div>
+      <div class="viewer-notice-hint">
+        <span>💡 Nhấn <strong>"⬅ QUAY LẠI TRANG CHÍNH"</strong> hoặc phím <strong>Esc</strong> để trở về danh mục</span>
+      </div>
+    </div>
+
+    <!-- Iframe Container Body (Directly displays LG official page) -->
+    <div class="viewer-frame-container" id="viewerFrameContainer">
+      <!-- Loading Skeleton Spinner -->
+      <div class="viewer-loading-overlay" id="viewerLoading">
+        <div class="loading-spinner"></div>
+        <p class="loading-text">Đang kết nối và tải trang chi tiết sản phẩm từ LG.com...</p>
+      </div>
+
+      <!-- Embedded Iframe of official LG page -->
+      <iframe id="viewerIframe" class="viewer-iframe" title="Trang chi tiết sản phẩm LG" src="about:blank" allow="autoplay; fullscreen"></iframe>
+    </div>
+  </div>
+
+  <!-- Floating Back to Top Button -->
+  <button class="btn-floating-top" id="btnFloatingTop" title="Lên đầu trang" aria-label="Lên đầu trang">
+    ▲
+  </button>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p><span class="footer-brand">LG Electronics Vietnam</span> • Catalogue Dòng Tủ Lạnh 2026</p>
+      <p>Bản quyền thuộc về LG Electronics. Thiết kế và tối ưu trải nghiệm tương tác trực tuyến.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
+</body>
+</html>
