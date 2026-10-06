@@ -201,7 +201,6 @@ const PRODUCTS = [
     badge: "HOT",
     badgeImg: "assets/images/image38.png",
     link: "https://www.lg.com/vn/tu-lanh/tu-lanh-instaview/lbb33bgmai/",
-    highlight: true,
     desc: "Cửa kính InstaView gõ 2 lần sáng đèn độc quyền, ngăn đá dưới thời thượng",
     type: "Ngăn đá dưới"
   },

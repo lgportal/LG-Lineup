@@ -221,7 +221,7 @@ document.addEventListener('DOMContentLoaded', () => {
            title="Chạm để xem ${product.model} (Có nút Quay lại trang chính)">
           <div class="grid-image-wrap">
             ${badgeHtml}
-            <img src="${product.image}" alt="${product.model}" loading="lazy" />
+            <img class="grid-product-img" src="${product.image}" alt="${product.model}" loading="lazy" />
           </div>
           <div class="grid-category-tag">${product.type}</div>
           <h3 class="grid-model-name">${product.model}</h3>

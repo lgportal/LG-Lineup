@@ -1,51 +1,117 @@
 /* ==========================================================================
-   LG REFRIGERATOR LINEUP 2026 - PURE WHITE & LG RED SIGNATURE THEME
-   Tone: Trắng - Đỏ (White & Red Tone) - Tuyệt đối không dùng màu đen
+   LG ELECTRONICS BRAND TYPOGRAPHY & IDENTITY (BI GUIDELINES V5.2)
+   Official Typeface: LG EI Headline & LG EI Text
+   Official Palette: Heritage Red, Active Red & Warm Gray Palette
    ========================================================================== */
 
+/* ---- LG EI Headline: Official 5-style headline family ---- */
+@font-face {
+  font-family: "LG EI Headline";
+  src: url("../assets/brand/fonts/LGEIHeadline-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LG EI Headline";
+  src: url("../assets/brand/fonts/LGEIHeadline-Semibold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LG EI Headline";
+  src: url("../assets/brand/fonts/LGEIHeadline-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ---- LG EI Text: Official 4-style text family ---- */
+@font-face {
+  font-family: "LG EI Text";
+  src: url("../assets/brand/fonts/LGEIText-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LG EI Text";
+  src: url("../assets/brand/fonts/LGEIText-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LG EI Text";
+  src: url("../assets/brand/fonts/LGEIText-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "LG EI Text";
+  src: url("../assets/brand/fonts/LGEIText-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  /* Color Palette - LG Crimson Red & Clean Pure White */
-  --lg-red: #C4003E;
-  --lg-red-glow: rgba(196, 0, 62, 0.25);
-  --lg-red-dark: #9E0032;
-  --lg-red-light: #E01A57;
-  --lg-red-soft: #FFF1F4;
-  --lg-red-border: #FECDD6;
-  --lg-red-tag-bg: #FFE5EB;
-  
-  /* White & Light Neutral Palette */
-  --bg-primary: #F8F9FB;
-  --bg-secondary: #FFFFFF;
+  /* Core Brand Colors - BI Guidelines V5.2 */
+  --lg-red: #A50034;             /* Heritage Red: Official Signature Brand Mark */
+  --lg-active-red: #FD312E;      /* Active Red: Interactive Highlights & Primary Action */
+  --lg-active-red-web: #EA1917;  /* Active Red for LG.com Web */
+  --lg-red-glow: rgba(253, 49, 46, 0.28);
+  --lg-red-dark: #8A002B;
+  --lg-red-light: #FF4744;
+  --lg-red-soft: #FFF4F4;
+  --lg-red-border: #FCD5D4;
+  --lg-red-tag-bg: #FFEBEB;
+
+  /* Official LG Warm Gray Palette */
+  --lg-white: #FFFFFF;
+  --lg-warm-gray-01: #262626;    /* Ink: High-contrast headings (13.7:1 contrast on ground) */
+  --lg-warm-gray-02: #4A4946;    /* Body: Body text & labels (8.1:1 contrast) */
+  --lg-warm-gray-03: #716F6A;    /* Mute: Secondary notes & captions (4.5:1 contrast) */
+  --lg-warm-gray-04: #CBC8C2;    /* Line: Hairlines, dividers, borders */
+  --lg-warm-gray-05: #E6E1D6;    /* Panel subtle tint */
+  --lg-warm-gray-06: #F0ECE4;    /* Panel background */
+  --lg-warm-gray-07: #F6F3EB;    /* Ground background (Official warm off-white ground) */
+
+  /* Semantic UI Colors */
+  --bg-primary: #FAF8F5;         /* Refined warm ground based on Warm Gray 07 */
+  --bg-secondary: #FFFFFF;       /* Pure white card surface */
   --bg-card: #FFFFFF;
   --bg-card-hover: #FFFFFF;
-  --bg-subtle: #F1F3F7;
-  
-  /* Borders */
-  --border-subtle: #E2E8F0;
-  --border-card: #E5E9F0;
-  --border-active: #C4003E;
-  --border-light-red: #FCD5DC;
+  --bg-subtle: #F3EFE7;
 
-  /* Typography Colors (Slate & Charcoal, never pitch black) */
-  --text-primary: #1E293B;
-  --text-secondary: #475569;
-  --text-muted: #64748B;
-  --text-red: #C4003E;
+  /* Borders */
+  --border-subtle: #E6E3DB;
+  --border-card: #ECE9E2;
+  --border-active: var(--lg-active-red);
+  --border-light-red: #FCD5D4;
+
+  /* Typography Colors */
+  --text-primary: var(--lg-warm-gray-01);
+  --text-secondary: var(--lg-warm-gray-02);
+  --text-muted: var(--lg-warm-gray-03);
+  --text-red: var(--lg-red);
+
+  /* Brand Typography */
+  --font-family: "LG EI Text", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: "LG EI Headline", "LG EI Text", sans-serif;
 
   /* Header & Shadows */
-  --header-bg: rgba(255, 255, 255, 0.95);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
-  --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.05);
-  --shadow-hover: 0 14px 32px rgba(196, 0, 62, 0.14);
-  --shadow-viewer: 0 10px 40px rgba(0, 0, 0, 0.12);
+  --header-bg: rgba(250, 248, 245, 0.95);
+  --shadow-sm: 0 2px 8px rgba(38, 38, 38, 0.04);
+  --shadow-card: 0 4px 18px rgba(38, 38, 38, 0.05);
+  --shadow-hover: 0 14px 30px rgba(253, 49, 46, 0.16);
+  --shadow-viewer: 0 10px 40px rgba(38, 38, 38, 0.12);
 
   /* Badges */
-  --badge-hot-bg: linear-gradient(135deg, #FF1E40, #C4003E);
-  --badge-new-bg: linear-gradient(135deg, #FF5722, #E0002A);
-
-  /* Fonts */
-  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-  --font-display: 'Outfit', var(--font-family);
+  --badge-hot-bg: linear-gradient(135deg, #FD312E, #A50034);
+  --badge-new-bg: linear-gradient(135deg, #FF5B36, #FD312E);
 
   /* Transitions */
   --radius-sm: 6px;
@@ -152,18 +218,15 @@ body {
   color: var(--text-primary);
 }
 
+.brand-logo-img {
+  height: 38px;
+  width: auto;
+  object-fit: contain;
+  display: block;
+}
+
 .brand-badge {
-  background: var(--lg-red);
-  color: #FFFFFF;
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: 1.15rem;
-  letter-spacing: 1px;
-  padding: 6px 14px;
-  border-radius: var(--radius-sm);
-  box-shadow: 0 4px 12px var(--lg-red-glow);
-  display: inline-flex;
-  align-items: center;
+  display: none;
 }
 
 .brand-text {
@@ -634,10 +697,10 @@ body {
   display: block;
 }
 
-/* Red Highlight Model Name (as LBB33BGMAI in original PDF) */
+/* Model Name (Black text) */
 .product-card-slide.highlight .card-model-name {
-  color: #D32F2F;
-  font-weight: 800;
+  color: #1E293B;
+  font-weight: 700;
 }
 
 .card-hint {
@@ -703,7 +766,8 @@ body {
   padding: 8px;
 }
 
-.grid-image-wrap img {
+.grid-image-wrap .grid-product-img,
+.grid-image-wrap > img:not(.badge-img) {
   height: 175px;
   width: auto;
   max-width: 100%;
@@ -712,15 +776,27 @@ body {
   transition: transform var(--transition-smooth);
 }
 
-.product-card-grid:hover .grid-image-wrap img {
+.product-card-grid:hover .grid-image-wrap .grid-product-img,
+.product-card-grid:hover .grid-image-wrap > img:not(.badge-img) {
   transform: scale(1.08);
 }
 
 .grid-badge-wrap {
   position: absolute;
-  top: 6px;
-  left: 6px;
-  z-index: 2;
+  top: 10px;
+  left: calc(50% - 58px);
+  z-index: 3;
+  pointer-events: none;
+}
+
+.grid-badge-wrap .badge-img {
+  height: 38px;
+  width: auto;
+  max-width: 42px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.22));
+  animation: badge-float 3s ease-in-out infinite;
+  display: block;
 }
 
 .grid-category-tag {
@@ -1160,6 +1236,13 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 8px;
+}
+
+.footer-slogan-img {
+  height: 26px;
+  width: auto;
+  object-fit: contain;
+  margin-bottom: 4px;
 }
 
 .footer-brand {
